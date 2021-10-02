@@ -46,7 +46,7 @@
         position: fixed; 
         top: 0;
         width: 100%;
-        z-index: 99;
+        z-index: 98;
         
     }
     .hamburger-menu{
@@ -60,6 +60,39 @@
     }
     .itemConteiner{
         padding-top: 150px;
+    }
+    .modalWindowConteiner{
+        width: 600px;
+    }
+}
+
+@media (max-width: 630px){
+    .windowHead{
+        height: 250px;
+    }
+    .modalWindowConteiner{
+        width: 500px;
+    }
+    .windowTitle{
+        font-size:25px;
+        padding-top: 2px;
+    }
+    .windowBody{
+        font-size:17px;
+    }
+}
+
+@media (max-width: 520px){
+    .windowHead{
+        height: 205px;
+    }
+    .modalWindowConteiner{
+        width: 350px;
+    }
+    .windowTitle{
+        font-size:20px;
+        font-weight: bold;
+        padding-top: 0px;
     }
 }
 
@@ -78,6 +111,24 @@
         width: 350px;
     }
 }
+
+@media (max-width: 360px){
+    .windowHead{
+        height: 190px;
+    }
+    .modalWindowConteiner{
+        width: 300px;
+    }
+    .windowTitle{
+        font-size:20px;
+        font-weight: bold;
+        padding-top: 0px;
+    }
+    .windowBody{
+        font-size:17px;
+    }
+}
+
 
 @media (max-width: 390px){
     .titles{
