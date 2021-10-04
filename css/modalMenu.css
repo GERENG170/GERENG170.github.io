@@ -17,14 +17,49 @@
     background: white;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
 }
 
 .btnModalWindowContactsClose{
-    width: 100px;
-    height: 50px;
+    width: 150px;
+    height: 75px;
     background: black;
     color: white;
 }
 .btnModalWindowContactsClose:hover{
     background: rgb(53, 53, 53);
+}
+.modalWindowContactsConteiner{
+    display: flex;
+    padding: 20px 0 20px 0;
+
+}
+
+.windowContactsTitle{
+    padding-right: 20px;
+}
+
+.windowContactsBody{
+    padding-left: 30px;
+}
+
+.btnContactsClose{
+    padding: 20px 0 0 0;
+    
+}
+
+.windowContactsTitle ul li{
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.windowContactsBody ul li{
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.btnCloseDivContacts{
+    
 }
