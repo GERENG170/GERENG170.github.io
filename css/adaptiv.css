@@ -94,6 +94,16 @@
         font-weight: bold;
         padding-top: 0px;
     }
+    .modalWindowContactsConteiner{
+        width: 400px;
+    }
+    .windowContactsTitle ul li{
+        font-size: 20px;
+    }
+    
+    .windowContactsBody ul li{
+        font-size: 20px;  
+    }
 }
 
 @media (max-width: 580px){
@@ -109,6 +119,18 @@
     .item{
         height: 250px;
         width: 350px;
+    }
+}
+
+@media (max-width: 420px){
+    .modalWindowContactsConteiner{
+        width: 300px;
+    }
+    .windowContactsTitle ul li{
+        font-size: 15px;
+    }
+    .windowContactsBody ul li{
+        font-size: 15px;  
     }
 }
 

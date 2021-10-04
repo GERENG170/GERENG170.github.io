@@ -82,3 +82,6 @@ function openContactsMenu(){
 function closeContactsModal(){
     modalContacts.style.display = "none";
 }
+
+let borgerCont = document.getElementById("burgerContactsId");
+borgerCont.addEventListener('click', openContactsMenu);
