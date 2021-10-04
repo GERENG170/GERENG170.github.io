@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/modalMenu.css">
     <link rel="stylesheet" href="./css/modalW.css">
     <link rel="stylesheet" href="./css/adaptiv.css">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -9,27 +10,52 @@
     <title></title>
 </head>
 <body>
-    <div class="modalWindow" id="myModalWindow">
-        <div class="modalWindowConteiner">
-            <div class="windowHead" id="windowHeadId"></div>
-            <div class="windowTitle" id="windowTitleId">
-                <p>Denmark</p>
+        <div class="modalWindowContacts" id="myModalWindowContacts">
+            <div class="modalWindowContactsConteiner">
+                <div class="windowContactsTitle" id="windowContactsTitleId">
+                    <ul>
+                        <li>Почта</li>
+                        <li> Номер</li>
+                        <li>Сайт</li>
+                        <li>Сообщество</li>
+                        <li>Группа ВК</li>
+                    </ul>
+                </div>
+                <div class="windowContactsBody" id="windowContactsBodyId">
+                    <ul>
+                        <li>artur.gereng@mail.ru</li>
+                        <li>+375 (29) 538 34 05</li>
+                        <li>www.google.com</li>
+                        <li>tg/qwewqqew.com</li>
+                        <li>vk.programm.com</li>
+                    </ul>
+                </div>
+                <div class="btnContactsClose">
+                    <button class="btnModalWindowContactsClose" id="windowContactsClose">Close</button>
+                </div>
             </div>
-            <div class="windowBody" id="windowBodyId">
-                <p>
-                    Denmark is a Scandinavian state located on the Jutland Peninsula and numerous nearby islands. It neighbors Sweden and is connected to it by the Øresund Bridge. Copenhagen, the capital of Denmark, is famous for its royal palaces, the colorful old port area of ​​Nyhavn, Tivoli amusement park and the famous statue of the Little Mermaid. Odense, the birthplace of Hans Christian Andersen, is popular with tourists for its medieval center with cobblestone streets and half-timbered houses.
-                </p>
-            </div>
-            <div class="btnMore">
-                <button class="btnModalWindow" id="windowMore">More info</button>
-                <button class="btnModalWindowClose" id="windowClose">Close</button>
-            </div>
-            </div>
-    </div>
+        </div>
+        <div class="modalWindow" id="myModalWindow">
+            <div class="modalWindowConteiner">
+                <div class="windowHead" id="windowHeadId"></div>
+                <div class="windowTitle" id="windowTitleId">
+                    <p>Denmark</p>
+                </div>
+                <div class="windowBody" id="windowBodyId">
+                    <p>
+                        Denmark is a Scandinavian state located on the Jutland Peninsula and numerous nearby islands. It neighbors Sweden and is connected to it by the Øresund Bridge. Copenhagen, the capital of Denmark, is famous for its royal palaces, the colorful old port area of ​​Nyhavn, Tivoli amusement park and the famous statue of the Little Mermaid. Odense, the birthplace of Hans Christian Andersen, is popular with tourists for its medieval center with cobblestone streets and half-timbered houses.
+                    </p>
+                </div>
+                <div class="btnMore">
+                    <button class="btnModalWindow" id="windowMore">More info</button>
+                    <button class="btnModalWindowClose" id="windowClose">Close</button>
+                </div>
+                </div>
+        </div>
         <div class="conteiner">
             <div class="head">
                 <button class="btnHead" id="btnHome">Home</button>
-                <button class="btnHead">Contacts</button>
+                <button class="btnHead" id="btnContactsId">Contacts</button>
                 <button class="btnHead">Settings</button>
                 <button class="btnHead">Log in</button>
                 <div class="hamburger-menu">
@@ -76,11 +102,8 @@
                             <li>vk.programm.com</li>
                         </ul>
                     </div>
-                    
                 </div>     
             </div>
-            
-
         </div>
         <script src="js/script.js"></script>
 </body>

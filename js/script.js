@@ -69,3 +69,16 @@ function openHambMenu(){
         menuBox.style.display = "none";
     }   
 }
+
+let modalContacts = document.getElementById("myModalWindowContacts");
+let btnCont = document.getElementById("btnContactsId");
+let btnCloseContacts = document.getElementById("windowContactsClose");
+modalContacts.addEventListener('click', closeContactsModal)
+btnCont.addEventListener("click", openContactsMenu);
+
+function openContactsMenu(){
+    modalContacts.style.display = "flex";
+}
+function closeContactsModal(){
+    modalContacts.style.display = "none";
+}
