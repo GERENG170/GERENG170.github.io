@@ -10,6 +10,7 @@
     <title></title>
 </head>
 <body>
+    <div class="modalMenuItems">
         <div class="modalWindowContacts" id="myModalWindowContacts">
             <div class="modalWindowContactsConteiner">
                 <div class="windowContactsTitle" id="windowContactsTitleId">
@@ -33,10 +34,31 @@
             </div>
             <div class="btnCloseDivContacts">
                 <div class="btnContactsClose">
-                    <button class="btnModalWindowContactsClose" id="windowContactsClose">Close</button>
+                    <button class="btnModalWindowContactsClose" id="windowContactsClose">close</button>
                 </div>
             </div>
         </div>
+            <div class="mSetting" id="mSettingId">
+                <div class="mSettingConteiner">
+                    <div class="temeTitle">
+                    <ul>
+                        <li>Светлая тема</li>
+                        <li>Темная тема</li>
+                    </ul>
+                </div>
+                <div class="temeBtns">
+                    <ul>
+                        <li><button class="btnLight" id="btnLightId">вкл</button></li>
+                        <li><button class="btnDark" id="btnDarkId">вкл</button></li>
+                    </ul>  
+                </div>
+                </div>
+                <div class="btnCloseSet">
+                    <button class="buttonSettingClose" id="buttonSettingCloseId">close</button>
+                </div>
+            </div>
+        
+    </div>
         <div class="modalWindow" id="myModalWindow">
             <div class="modalWindowConteiner">
                 <div class="windowHead" id="windowHeadId"></div>
@@ -54,11 +76,11 @@
                 </div>
                 </div>
         </div>
-        <div class="conteiner">
+        <div class="conteiner" id="conteinerId">
             <div class="head">
                 <button class="btnHead" id="btnHomeId">Home</button>
                 <button class="btnHead" id="btnContactsId">Contacts</button>
-                <button class="btnHead">Settings</button>
+                <button class="btnHead" id="btnSettingId">Settings</button>
                 <button class="btnHead">Log in</button>
                 <div class="hamburger-menu">
                     <div>

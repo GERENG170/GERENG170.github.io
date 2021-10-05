@@ -21,6 +21,8 @@
 }
 
 .btnModalWindowContactsClose{
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
     width: 150px;
     height: 75px;
     background: black;
@@ -60,3 +62,68 @@
     font-family: 'Oswald', sans-serif;
 }
 
+.mSetting{
+    display: none;
+    position: fixed;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    z-index: 95;
+    width: 100%;
+    height: 100%;
+}
+
+.mSettingConteiner{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    background: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.temeTitle{
+    padding-right: 50px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+}
+
+.temeTitle ul li{
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+
+
+.temeBtns{
+    font-family: 'Oswald', sans-serif;
+    padding-left: 50px;
+}
+
+.temeBtns ul li button{
+    /* font-family: 'Oswald', sans-serif; */
+    color: white;
+    font-size: 20px;
+    margin: 20px 0 20px 0;
+    width: 125px;
+    height: 50px;
+    background: brown;
+}
+
+.btnCloseSet{
+    padding-top: 20px;
+}
+
+.buttonSettingClose{
+    font-family: 'Oswald', sans-serif;
+    width: 150px;
+    font-size: 25px;
+    height: 75px;
+    background: black;
+    color: white;
+}
+
+/* .btnModalWindowContactsClose:hover{
+    background: rgb(53, 53, 53);
+} */

@@ -85,3 +85,42 @@ function closeContactsModal(){
 
 let borgerCont = document.getElementById("burgerContactsId");
 borgerCont.addEventListener('click', openContactsMenu);
+
+let btnSet = document.getElementById("btnSettingId");
+let modalSet = document.getElementById("mSettingId");
+
+btnSet.addEventListener('click', openSet);
+
+function openSet(){
+    modalSet.style.display = "flex";
+}
+
+
+let btnCloseSet = document.getElementById("buttonSettingCloseId");
+btnCloseSet.addEventListener("click",closeSet);
+
+function closeSet(){
+    modalSet.style.display = "none";
+}
+
+let btnDark = document.getElementById("btnDarkId");
+btnDark.addEventListener("click",turnOnDark);
+
+function turnOnDark(){
+    let btnLight = document.getElementById("btnLightId");
+    let btnDarkAfter = document.getElementById("btnDarkId");
+    let conteinerBg = document.querySelector(".conteiner");
+    let blockBtn1 = document.getElementById("btnDenmark");
+    let blockBtn2 = document.getElementById("btnSweden");
+    let blockBtn3 = document.getElementById("btnIrlandia");
+    conteinerBg.style.background = "url(./img/nightMountains2.jpg) 0 0/100% auto no-repeat";
+    blockBtn1.style.background = "rgb(34, 25, 43)";
+    blockBtn2.style.background = "rgb(34, 25, 43)";
+    blockBtn3.style.background = "rgb(34, 25, 43)";
+    btnCloseSet.style.background = "rgb(34, 25, 43)";
+    btnDarkAfter.style.background = "rgb(34, 25, 43)";
+    btnLight.style.background = "rgb(34, 25, 43)";
+}
+
+
+
