@@ -88,7 +88,8 @@ borgerCont.addEventListener('click', openContactsMenu);
 
 let btnSet = document.getElementById("btnSettingId");
 let modalSet = document.getElementById("mSettingId");
-
+let burgerSet = document.getElementById("burgerSettingsId");
+burgerSet.addEventListener('click', openSet)
 btnSet.addEventListener('click', openSet);
 
 function openSet(){
@@ -121,6 +122,8 @@ function turnOnDark(){
     btnDarkAfter.style.background = "rgb(34, 25, 43)";
     btnLight.style.background = "rgb(34, 25, 43)";
 }
+
+
 
 
 
