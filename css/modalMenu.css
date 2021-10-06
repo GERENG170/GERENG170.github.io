@@ -65,6 +65,7 @@
 .mSetting{
     display: none;
     position: fixed;
+    background: rgb(109, 109, 109,0.4) ;
     flex-direction: column;
     justify-content: center; 
     align-items: center;
