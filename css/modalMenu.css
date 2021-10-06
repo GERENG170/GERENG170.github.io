@@ -74,7 +74,8 @@
 }
 
 .mSettingConteiner{
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
     width: 500px;
     background: white;
     justify-content: center;

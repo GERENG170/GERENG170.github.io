@@ -106,15 +106,20 @@ function closeSet(){
 
 let btnDark = document.getElementById("btnDarkId");
 btnDark.addEventListener("click",turnOnDark);
-
+let temeNum;
 function turnOnDark(){
+    temeNum = "dark";
     let btnLight = document.getElementById("btnLightId");
     let btnDarkAfter = document.getElementById("btnDarkId");
-    let conteinerBg = document.querySelector(".conteiner");
+    let conteinerBg = document.getElementById("conteinerId");
     let blockBtn1 = document.getElementById("btnDenmark");
     let blockBtn2 = document.getElementById("btnSweden");
     let blockBtn3 = document.getElementById("btnIrlandia");
     conteinerBg.style.background = "url(./img/nightMountains2.jpg) 0 0/100% auto no-repeat";
+    if(document.documentElement.clientWidth <=1150){
+        conteinerBg.style.background = "url(./img/nightMountains2.jpg) 0 0/auto 100% no-repeat";
+    }
+    localStorage.setItem('teme',temeNum);
     blockBtn1.style.background = "rgb(34, 25, 43)";
     blockBtn2.style.background = "rgb(34, 25, 43)";
     blockBtn3.style.background = "rgb(34, 25, 43)";
@@ -123,7 +128,39 @@ function turnOnDark(){
     btnLight.style.background = "rgb(34, 25, 43)";
 }
 
+let btnLight = document.getElementById("btnLightId");
+btnLight.addEventListener('click', turnOnLight);
 
+function turnOnLight(){
+    temeNum = "light";
+    let btnLight = document.getElementById("btnLightId");
+    let btnDarkAfter = document.getElementById("btnDarkId");
+    let conteinerBg = document.getElementById("conteinerId");
+    let blockBtn1 = document.getElementById("btnDenmark");
+    let blockBtn2 = document.getElementById("btnSweden");
+    let blockBtn3 = document.getElementById("btnIrlandia");
+    conteinerBg.style.background = "url(./img/2.jpg) 0 0/100% auto no-repeat";
+    if(document.documentElement.clientWidth <=1150){
+        conteinerBg.style.background = "url(./img/2.jpg) 0 0/auto 100% no-repeat";
+    }
+    localStorage.setItem('teme',temeNum);
+    blockBtn1.style.background = "brown";
+    blockBtn2.style.background = "brown";
+    blockBtn3.style.background = "brown";
+    btnCloseSet.style.background = "brown";
+    btnDarkAfter.style.background = "brown";
+    btnLight.style.background = "brown";
+}
 
+function getCurrentTeme(){
+let nameTeme = localStorage.getItem('teme');
+if(nameTeme == "dark"){
+    turnOnDark();
+}
+else if(nameTeme == "light"){
+    turnOnLight;
+}
+}
 
+getCurrentTeme();
 
