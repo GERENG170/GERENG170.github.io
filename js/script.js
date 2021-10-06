@@ -123,7 +123,7 @@ function turnOnDark(){
     blockBtn1.style.background = "rgb(34, 25, 43)";
     blockBtn2.style.background = "rgb(34, 25, 43)";
     blockBtn3.style.background = "rgb(34, 25, 43)";
-    btnCloseSet.style.background = "rgb(34, 25, 43)";
+    btnCloseSet.style.background = "dark";
     btnDarkAfter.style.background = "rgb(34, 25, 43)";
     btnLight.style.background = "rgb(34, 25, 43)";
 }
@@ -147,7 +147,7 @@ function turnOnLight(){
     blockBtn1.style.background = "brown";
     blockBtn2.style.background = "brown";
     blockBtn3.style.background = "brown";
-    btnCloseSet.style.background = "brown";
+    btnCloseSet.style.background = "dark";
     btnDarkAfter.style.background = "brown";
     btnLight.style.background = "brown";
 }
