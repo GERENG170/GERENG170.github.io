@@ -3,11 +3,11 @@
         margin-left: 50px;
         margin-right: 50px;
     }
-    .conteiner{
+    /* .conteiner{
         background: url(../img/2.jpg) 0 0/auto 100% no-repeat;
         background-position: 0 0;
         background-size:auto 100%  ;
-    }
+    } */
 }
 
 
@@ -198,5 +198,11 @@
     .item{
         height: 170px;
         width: 270px;
+    }
+}
+
+@media (max-width: 1100px){
+    .conteiner{
+        background: url(../img/2.jpg) 0 0/auto 100% no-repeat;
     }
 }

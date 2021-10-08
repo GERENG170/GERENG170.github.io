@@ -107,6 +107,9 @@ function closeSet(){
 let btnDark = document.getElementById("btnDarkId");
 btnDark.addEventListener("click",turnOnDark);
 let temeNum;
+let link;
+let btnModalMore = document.getElementById("windowMore");
+    let btnModalClose = document.getElementById("windowClose");
 function turnOnDark(){
     temeNum = "dark";
     let btnLight = document.getElementById("btnLightId");
@@ -120,6 +123,8 @@ function turnOnDark(){
         conteinerBg.style.background = "url(./img/nightMountains2.jpg) 0 0/auto 100% no-repeat";
     }
     localStorage.setItem('teme',temeNum);
+    btnModalClose.style.background = "black";
+    btnModalMore.style.background = "rgb(34, 25, 43)";
     blockBtn1.style.background = "rgb(34, 25, 43)";
     blockBtn2.style.background = "rgb(34, 25, 43)";
     blockBtn3.style.background = "rgb(34, 25, 43)";
@@ -143,6 +148,8 @@ function turnOnLight(){
     if(document.documentElement.clientWidth <=1150){
         conteinerBg.style.background = "url(./img/2.jpg) 0 0/auto 100% no-repeat";
     }
+    btnModalClose.style.background = "black";
+    btnModalMore.style.background = "brown";
     localStorage.setItem('teme',temeNum);
     blockBtn1.style.background = "brown";
     blockBtn2.style.background = "brown";
@@ -150,6 +157,7 @@ function turnOnLight(){
     btnCloseSet.style.background = "dark";
     btnDarkAfter.style.background = "brown";
     btnLight.style.background = "brown";
+    
 }
 
 function getCurrentTeme(){
@@ -163,4 +171,3 @@ else if(nameTeme == "light"){
 }
 
 getCurrentTeme();
-
