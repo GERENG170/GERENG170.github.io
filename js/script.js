@@ -118,10 +118,7 @@ function turnOnDark(){
     let blockBtn1 = document.getElementById("btnDenmark");
     let blockBtn2 = document.getElementById("btnSweden");
     let blockBtn3 = document.getElementById("btnIrlandia");
-    conteinerBg.style.background = "url(./img/nightMountains2.jpg) 0 0/100% auto no-repeat";
-    if(document.documentElement.clientWidth <=1150){
-        conteinerBg.style.background = "url(./img/nightMountains2.jpg) 0 0/auto 100% no-repeat";
-    }
+    conteinerBg.style.background = "url(./img/nightMountains2.jpg) 0 0/auto auto no-repeat";
     localStorage.setItem('teme',temeNum);
     btnModalClose.style.background = "black";
     btnModalMore.style.background = "rgb(34, 25, 43)";
@@ -144,10 +141,7 @@ function turnOnLight(){
     let blockBtn1 = document.getElementById("btnDenmark");
     let blockBtn2 = document.getElementById("btnSweden");
     let blockBtn3 = document.getElementById("btnIrlandia");
-    conteinerBg.style.background = "url(./img/2.jpg) 0 0/100% auto no-repeat";
-    if(document.documentElement.clientWidth <=1150){
-        conteinerBg.style.background = "url(./img/2.jpg) 0 0/auto 100% no-repeat";
-    }
+    conteinerBg.style.background = "url(./img/2.jpg) 0px 0px/cover no-repeat";
     btnModalClose.style.background = "black";
     btnModalMore.style.background = "brown";
     localStorage.setItem('teme',temeNum);
@@ -157,6 +151,9 @@ function turnOnLight(){
     btnCloseSet.style.background = "dark";
     btnDarkAfter.style.background = "brown";
     btnLight.style.background = "brown";
+    // if(document.documentElement.clientWidth <= 900){
+    //     conteinerBg.style.background = "url(./img/2.jpg) 0px 0px/auto auto no-repeat";
+    // }
     
 }
 

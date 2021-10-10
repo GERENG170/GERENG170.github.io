@@ -201,8 +201,19 @@
     }
 }
 
+ /* @media (min-width: 1100px){
+    .conteiner{
+        background: url(../img/2.jpg) 0 0/auto 100% no-repeat;
+    }
+} */
 @media (max-width: 1100px){
     .conteiner{
         background: url(../img/2.jpg) 0 0/auto 100% no-repeat;
     }
-}
+} 
+
+/* @media (min-width: 1100px){
+    .conteiner{
+        background: url(../img/2.jpg) 0 0/100% auto no-repeat;
+    }
+} */
