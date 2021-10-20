@@ -1,0 +1,127 @@
+/*Обнуление*/
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+/*--------------------*/
+
+body{
+
+}
+
+.mainConteiner{
+
+}
+
+.conteiner{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.head{
+    border-bottom: 2px solid white;
+    font-family: "Lucida";
+    color:white;
+    height: 949px;
+    background: url(/img/head.png) 0 0/100% auto no-repeat;
+    .menu{
+        padding-top: 30px;
+        button{
+            border-bottom: 3px solid white;
+            font-size: 25px;
+            color:white;
+            background: none;
+            margin-left: 120px;
+        }
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+        .title{
+            padding-left:300px;
+            word-wrap: break-word;
+            padding-top: 100px;
+            font-size: 100px;
+            p{
+                position:relative;
+                width: .7em;
+                text-align: center;
+            }
+        }
+        .body{
+            position: absolute;
+            left: 600px;
+            padding-top:600px;
+            width: 1000px;
+            font-size: 45px;
+        }
+    
+    }    
+}
+
+
+
+
+.firstSt{
+    background:black;
+    height: 600px;
+    color: white;
+    font-size: 40px;
+    .textFirstSt{
+        padding:200px 70px 0 500px;
+    }
+}
+.secondSt{
+    height: 600px;
+    background: black;
+    text-align: center;
+    color:white;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    
+    p{
+        padding-left:50px;
+        padding-right:50px;
+        font-size: 35px;
+        padding-top: 260px;
+    }
+}
+
+.FourSt{
+    color:rgb(255, 255, 255);
+    height: 400px;
+    background:#000000;
+    border-bottom: 2px solid white;
+    // border-top: 2px solid white;
+    p{
+        margin-left: 160px;
+        margin-right: 160px;
+        text-align: center;
+        margin-top: 140px;
+        font-size: 25px;
+    }
+}
+
+.fiveSt{
+    display: flex;
+    text-align: center;
+    align-items:center;
+    padding-left: 42.5%;
+    font-family: "Lucida";
+    font-size: 20px;
+    height: 100px;
+    background:rgb(0, 0, 0);
+    color:white;
+}
